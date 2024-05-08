@@ -1,0 +1,95 @@
+*{
+    margin: 0;/*Zerando todas as margens das fontes*/
+    padding: 0;/*Zerando todos os padding*/
+    box-sizing: border-box;/*Responsividade*/
+}
+
+
+#text{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    background-color: #388E3C;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 3rem;
+    color: antiquewhite;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo2{
+    height: 7%;
+    width: 7%;
+}
+
+#text h1{
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #388E3C;
+}
+
+
+.form{
+    height: 25%;
+    width: 25%;
+}
+
+button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+
+/* Imagem primária */
+.imagem-primaria {
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Ocupa toda a altura */
+    opacity: 1; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave de opacidade */
+    z-index: 0; /* Mantém a imagem abaixo do texto */
+    border-radius: 15px;
+}
+
+/* Imagem secundária */
+.imagem-secundaria {
+    position: absolute; /* Posicionamento absoluto para sobreposição */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Ocupa toda a altura */
+    z-index: -1; /* Mantém a imagem abaixo da primária */
+    border-radius: 15px;
+}
+
+/* Texto sobreposto */
+.texto-sobreposto {
+    position: absolute; /* Posicionamento absoluto para sobreposição */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centralização exata */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    font-size: 30px; /* Tamanho do texto */
+    font-weight: 800;
+    text-align: center; /* Centraliza o texto */
+    z-index: 1; /* Coloca o texto sobre as imagens */
+    transition: font-size 0.6s ease; /* Transição suave de opacidade */
+}
+
+/* Opacidade ao passar o mouse */
+#produto:hover .imagem-primaria {
+    opacity: 0.3; /* Altera a opacidade para 0.3 ao passar o mouse sobre #produto */
+}
+
+#produto:hover .texto-sobreposto {
+    font-size: 40px;
+}

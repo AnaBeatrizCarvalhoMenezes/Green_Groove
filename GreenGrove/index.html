@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenGrove</title>
-    <link rel="stylesheet" href="src/styles/styles.css">    
+    <link rel="stylesheet" href="src/styles/styles.css"> 
+    <link rel="stylesheet" href="src/styles/carrosel.css">   
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
 </head>
 <body>
     <header>
         <div id="navbar">
-
-            <a>Shop</a>
-            <a>Activism</a>
-            <a>Sports</a>
-            <a>Story</a>
-
+            <ul id="nav_list"><!--lista de itens na barra de navegação-->
+                <li class="nav_item"><!--item da lista-->
+                    <a>Shop</a><!--link que redireciona para algum id chamado home-->
+                    <hr></hr>
+                </li>
+                <li class="nav_item"><!--item da lista-->
+                    <a>Activism</a><!--link que redireciona para algum id-->
+                    <hr></hr>
+                </li>
+                <li class="nav_item"><!--item da lista-->
+                    <a>Sports</a><!--link que redireciona para algum id-->
+                    <hr></hr>
+                </li>
+                <li class="nav_item"><!--item da lista-->
+                    <a>Story</a><!--link que redireciona para algum id-->
+                    <hr></hr>
+                </li>
+            </ul>
 
             <img class="logo" src="src/images/Palavra.png">
-
-
             <img class="button" src="src/images/search.png">
             <img class="button" src="src/images/Profile.png">
             <img class="button" src="src/images/Shop.png">
@@ -45,7 +58,15 @@
         </div>
         </section>
 
+        <div class="titulo">
+        <h1 class="title">Products</h1>
         <section id="products">
+
+            <button id="prev"><i class="fas fa-angle-left"></i></button>
+            <div id="carousel">
+
+            <div id="carousel-content">
+
             <div id="produto">
                 <div id="produto1">
                     <img src="src/services/Vegan.png" alt="Primeira Imagem" class="imagem-primaria">
@@ -77,40 +98,72 @@
                     <div class="texto-sobreposto">VEGAN</div>
                 </div>
             </div>
-        </section>
-        
 
-        <div id="carousel">
-            <button id="prev">←</button>
-            <div id="carousel-container">
-                <div id="carousel-content">
-                    <div class="product">Produto 1</div>
-                    <div class="product">Produto 2</div>
-                    <div class="product">Produto 3</div>
-                    <div class="product">Produto 4</div>
-                    <div class="product">Produto 5</div>
-                    <div class="product">Produto 6</div>
-                    <div class="product">Produto 7</div>
-                    <div class="product">Produto 8</div>
-                    <div class="product">Produto 9</div>
+            <div id="produto">
+                <div id="produto1">
+                    <img src="src/services/Vegan.png" alt="Primeira Imagem" class="imagem-primaria">
+                    <img src="src/services/Vegandark.png" alt="Segunda Imagem" class="imagem-secundaria">
+                    <div class="texto-sobreposto">VEGAN</div>
                 </div>
             </div>
-            <button id="next">→</button>
-        </div>
 
-        
-            <button id="next" onclick="moverCarousel(1)">→</button>
+            <div id="produto">
+                <div id="produto1">
+                    <img src="src/services/Vegan.png" alt="Primeira Imagem" class="imagem-primaria">
+                    <img src="src/services/Vegandark.png" alt="Segunda Imagem" class="imagem-secundaria">
+                    <div class="texto-sobreposto">VEGAN</div>
+                </div>
+            </div>
+
+            <div id="produto">
+                <div id="produto1">
+                    <img src="src/services/Vegan.png" alt="Primeira Imagem" class="imagem-primaria">
+                    <img src="src/services/Vegandark.png" alt="Segunda Imagem" class="imagem-secundaria">
+                    <div class="texto-sobreposto">VEGAN</div>
+                </div>
+            </div>
+
+            <div id="produto">
+                <div id="produto1">
+                    <img src="src/services/Vegan.png" alt="Primeira Imagem" class="imagem-primaria">
+                    <img src="src/services/Vegandark.png" alt="Segunda Imagem" class="imagem-secundaria">
+                    <div class="texto-sobreposto">VEGAN</div>
+                </div>
+            </div>
+
+            <div id="produto">
+                <div id="produto1">
+                    <img src="src/services/Vegan.png" alt="Primeira Imagem" class="imagem-primaria">
+                    <img src="src/services/Vegandark.png" alt="Segunda Imagem" class="imagem-secundaria">
+                    <div class="texto-sobreposto">VEGAN</div>
+                </div>
+            </div>
+
+            <div id="produto">
+                <div id="produto1">
+                    <img src="src/services/Vegan.png" alt="Primeira Imagem" class="imagem-primaria">
+                    <img src="src/services/Vegandark.png" alt="Segunda Imagem" class="imagem-secundaria">
+                    <div class="texto-sobreposto">VEGAN</div>
+                </div>
+            </div>
+
+            </div>
+            </div>
+
+             <button id="next"><i class='fas fa-angle-right'></i></button>
+        </section>
+
         </div>
         
 
-        
-        
     </main>
+    
 
     <footer>
 
     </footer>
 
+    <script src="https://kit.fontawesome.com/907eaec6d4.js" crossorigin="anonymous"></script>
     <script src="src/javascript/movement.js"></script>
 
 </body>

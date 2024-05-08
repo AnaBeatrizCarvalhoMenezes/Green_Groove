@@ -1,0 +1,48 @@
+*{
+    margin: 0;/*Zerando todas as margens das fontes*/
+    padding: 0;/*Zerando todos os padding*/
+    box-sizing: border-box;/*Responsividade*/
+}
+
+#next, #prev{
+    font-size: 50px;
+    color: #fff;
+    z-index: 1; /* Mantém a imagem abaixo do texto */
+}
+
+#carousel-content{
+    transition: transform 0.5s ease; /* Transição suave */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#carousel{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#products {
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 10%;
+    display: flex;
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #388E3C;
+}
+
+#produto {
+    position: relative; /* Posicionamento relativo para acomodar elementos sobrepostos */
+    width: 23%; /* Ocupa a largura total */
+    height: auto; /* Ajusta a altura conforme necessário */
+    cursor: pointer; /* Cursor de ponteiro para indicar interação */
+    flex-shrink: 0; /* Impede que o produto encolha */
+}

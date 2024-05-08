@@ -1,9 +1,9 @@
 let currentIndex = 0;
-const productsToShow = 3; // Número de produtos exibidos por vez
-const totalProducts = 9; // Total de produtos
+const productsToShow = 4; // Número de produtos exibidos por vez
+const totalProducts = 10; // Total de produtos
 
 const carouselContent = document.getElementById('carousel-content');
-const productWidth = document.querySelector('.product').clientWidth;
+const productWidth = document.querySelector('#produto1').clientWidth;
 
 function moveCarousel(direction) {
     currentIndex += direction;

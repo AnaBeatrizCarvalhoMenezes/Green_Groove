@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Nova Mono", monospace;
+    margin: 0;/*Zerando todas as margens das fontes*/
+    padding: 0;/*Zerando todos os padding*/
+    box-sizing: border-box;/*Responsividade*/
+}
+
+.button{
+    width: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+.button:hover{
+    width: 22px;
+}
+
+.logo{
+    height: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#navbar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #388E3C;
+}
+
+ul{
+    width: 22%;
+}
+
+#nav_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;/*tira as caracteristicas padrão da list no html*/
+}
+
+#navbar a{
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav_item hr {
+    bottom: 0;
+    left: 0;
+    width: 0; /* Começa com largura 0 para fazer a transição da esquerda para a direita */
+    height: 2px;
+    background-color: #FBFFFE; /* Cor da linha */
+    border: none;
+    opacity: 0; /* Começa com opacidade 0 */
+    transition: width 0.7s ease-out, opacity 0.7s ease-out; /* Transições para largura e opacidade */
+}
+
+.nav_item:hover hr {
+    opacity: 1; /* Aumenta a opacidade para 1 */
+    width: 100%; /* Expande a linha para a largura completa */
+}
