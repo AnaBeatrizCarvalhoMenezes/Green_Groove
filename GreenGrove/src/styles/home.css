@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     margin: 0;/*Zerando todas as margens das fontes*/
     padding: 0;/*Zerando todos os padding*/
@@ -11,12 +15,9 @@
 }
 
 .title{
-    background-color: #388E3C;
-    padding-left: 5%;
-    padding-top: 5%;
-    padding-bottom: 3%;
+    padding: 3%;
     font-size: 3rem;
-    color: antiquewhite;
+    color: #fff;
 }
 
 .titulo{
@@ -92,4 +93,73 @@ button{
 
 #produto:hover .texto-sobreposto {
     font-size: 40px;
+}
+
+.back{
+    background-color: #388E3C;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+    background-color: #fff;
+    border: none;
+    width: 70%;
+    border-radius: 50px;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+.textarea i{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color:#388E3C;
+}
+.textarea{
+    position: relative;
+    width: 100%;
+}
+
+
+.input-container {
+    position: relative;
+    width: 300px; /* largura da caixa de entrada */
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px; /* ajuste a posição horizontal do ícone */
+    top: 50%; /* centralize verticalmente o ícone */
+    transform: translateY(-50%);
+    color: #777; /* cor do ícone */
+}
+
+.password-input {
+    padding-left: 30px; /* espaço para o ícone */
+    width: calc(100% - 60px); /* largura do campo de entrada menos o espaço do ícone */
+    height: 40px; /* altura da caixa de entrada */
+    border: 1px solid #ccc; /* estilo da borda */
+    border-radius: 5px; /* arredondamento da borda */
+    font-size: 16px; /* tamanho da fonte */
+    box-sizing: border-box; /* incluir padding e border na largura total */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px; /* ajuste a posição horizontal do ícone */
+    top: 50%; /* centralize verticalmente o ícone */
+    transform: translateY(-50%);
+    cursor: pointer;
 }

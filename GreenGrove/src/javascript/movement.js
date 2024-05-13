@@ -20,3 +20,4 @@ function moveCarousel(direction) {
 
 document.getElementById('prev').addEventListener('click', () => moveCarousel(-1));
 document.getElementById('next').addEventListener('click', () => moveCarousel(1));
+

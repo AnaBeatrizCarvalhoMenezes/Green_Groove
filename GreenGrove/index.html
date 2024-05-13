@@ -14,15 +14,11 @@
         <div id="navbar">
             <ul id="nav_list"><!--lista de itens na barra de navegação-->
                 <li class="nav_item"><!--item da lista-->
-                    <a>Shop</a><!--link que redireciona para algum id chamado home-->
+                    <a href="#products">Shop</a><!--link que redireciona para algum id chamado home-->
                     <hr></hr>
                 </li>
                 <li class="nav_item"><!--item da lista-->
                     <a>Activism</a><!--link que redireciona para algum id-->
-                    <hr></hr>
-                </li>
-                <li class="nav_item"><!--item da lista-->
-                    <a>Sports</a><!--link que redireciona para algum id-->
                     <hr></hr>
                 </li>
                 <li class="nav_item"><!--item da lista-->
@@ -32,9 +28,8 @@
             </ul>
 
             <img class="logo" src="src/images/Palavra.png">
-            <img class="button" src="src/images/search.png">
+            <a href="#search"><img class="button" src="src/images/search.png"></a>
             <img class="button" src="src/images/Profile.png">
-            <img class="button" src="src/images/Shop.png">
             <img class="button" src="src/images/Love.png">
             <img class="button" src="src/images/About.png">
 
@@ -50,13 +45,29 @@
             <h1>
                 PRODUTOS ECOLÓGICOS.<br>
                 SUSTENBALIDADE.<br>
-                RESPONSABILIDADE AMBIENTAL<br>
+                RESPONSABILIDADE AMBIENTAL.<br>
             </h1>
             </div>
             
             <img class="form" src="src/images/Planet.png">
         </div>
         </section>
+
+        <div class="back">
+        <section id="search">
+            <h1 class="title">Search</h1>
+            <div class="textarea">
+                <!-- O ícone é posicionado dentro da div -->
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <!-- O textarea -->
+                <textarea placeholder="Comment text.">
+                </textarea>
+            </div>
+
+
+        </section>
+
+        
 
         <div class="titulo">
         <h1 class="title">Products</h1>
@@ -155,7 +166,26 @@
 
         </div>
         
+        </div>
 
+        <section id="user">
+            <div class="align">
+                <div class="noacount">
+                        <textarea placeholder="Username"></textarea>
+                        <div class="input-container">
+                            <input type="password" placeholder="Senha" class="password-input">
+                        </div>
+
+                        <button>Enter</button>
+                </div>
+
+                <div class="newacount">
+
+                </div>
+
+            </div>
+
+        </section>
     </main>
     
 
